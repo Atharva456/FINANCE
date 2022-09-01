@@ -1,0 +1,132 @@
+<section id="body">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <div>
+      <div id="navbar">
+        <!-- <img src="../../assets/images/7fa9f79a2cfe4c4fb067c0fdd4523f8d (2).png" class="navbar_img" alt="..." > -->
+        <img src="../../assets/images/Finance-modified.png" class="navbar_img" alt="..." >
+
+        <ul id="links">
+          <li class="link" [routerLink]="['/aboutus']">About</li>
+          <li class="link"  [routerLink]="['/adminlogin']">Admin Login </li>
+          <li class="link" [routerLink]="['/registerLink']">User Register</li>
+          <li class="link" [routerLink]="['/loginLink']">User Login</li>
+        </ul>
+        <br style="clear: both" />
+      </div>
+   <!-- ------------------------------------------------------------------------------------------------------------------- -->
+   <marquee>
+    
+    <li class="link" style="border: none;background-color: #181D31; color:#E6DDC4 ;font-size: 20px; font-weight: bold;font-family:'Dosis', sans-serif; " >Welcome to Finance Management System. Get exciting offers and discounts. Buy Product at no-cost EMI </li>
+  </marquee>
+
+  
+
+
+      <div class="card product" style="width: 37rem; " >
+        <img src="../../assets/images/iphone13.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+
+          <p class = "card-title">PRODUCT NAME:Apple iPhone 13</p>
+          <p class = "card-title">PRODUCT DETAILS: 128 GB ROM
+            15.49 cm (6.1 inch) Super Retina XDR Display
+            12MP + 12MP | 12MP Front Camera
+            A15 Bionic Chip Processor</p>
+          <p class = "card-title">COST:65999</p>
+          <p class="card-text"></p>
+          <button type="button" class="buybutton" [routerLink]="['/loginLink'] ">BUY NOW</button>
+        </div>
+      </div>
+
+      
+
+      <div class="card product" style="width: 37rem;" >
+        <img src="../../assets/images/microsoft surface.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+
+          <p class = "card-title">PRODUCT NAME:Microsoft Surface Go 3</p>
+          <p class = "card-title">PRODUCT DETAIL: Intel Pentium Core, SSD: 128 GB</p>
+          <p class = "card-title">COST: Rs. 52000</p>
+          <p class="card-text"></p>
+          <button type="button" class="buybutton" [routerLink]="['/loginLink'] ">BUY NOW</button>
+        </div>
+
+      </div>
+      <div class="card product" style="width: 37rem; " >
+        <img src="../../assets/images/cannon eos.jpg" class="card-img-top" alt="..." >
+        <div class="card-body">
+
+          <p class = "card-title">PRODUCT NAME: Canon DSLR 22.4mm</p>
+          <p class = "card-title">PRODUCT DETAIL: Sensor: APS-C CMOS Sensor with 24.1 MP (high resolution for large prints and image cropping). Transmission frequency (central frequency):Frequency: 2 412 to 2 462MHz. Standard diopter :-2.5 - +0.5m-1 (dpt)
+            ISO: 100-6400 sensitivity range (critical for obtaining grain-free pictures, especially in low light)
+           </p>
+          <p class = "card-title">COST: Rs.39453</p>
+          <p class="card-text"></p>
+          <button type="button" class="buybutton" [routerLink]="['/loginLink'] ">BUY NOW</button>
+        </div>
+      </div>
+
+
+
+
+
+      
+      <!-- =========================================================================================================================== -->
+
+
+      
+
+
+
+
+      <!-- <div id="cardDetails">
+        <h4>Available Cards </h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Card Type</th>
+              <th>Card Validity(in years)</th>
+              <th>Card Limit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let card of cards">
+              <td>{{ card.cardtype | uppercase }}</td>
+              <td>{{ card.validity }}</td>
+              <td>{{ card.cardlimit }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="eligibility">
+        <h4>Elgibility Criteria</h4>
+        <ol id="uleligibility">
+          <li>You are 18 years of age or over.</li>
+          <li>Indian citizens only can apply.</li>
+          <li>
+            Customers with a prior relationship should be earning Rs. 25,000 per month.
+          </li>
+          <li>
+            New applicants should be earning Rs. 50,000 per month to avail this
+            service
+          </li>
+          <li>The information supplied by you is true and correct.</li>
+        </ol>
+      </div>
+      <div id="termsandconditions">
+        <h4>Terms & Conditions</h4>
+        <ol>
+          <li>
+            Joining fee is a fee that a issuer may require you to pay annually to
+            use its credit card.
+          </li>
+          <li>A late fee is a charge for any payment made after the due date.</li>
+          <li>Joining Fees for Gold Membership will be Rs 500,which will be automatically debited from your card limit</li>
+          <li>Joining Fees for Titanium Membership will be Rs 1000,which will be automatically debited from your card limit</li>
+
+        </ol>
+      </div> -->
+    </div>
+  </section>
+  

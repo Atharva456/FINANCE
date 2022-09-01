@@ -1,0 +1,39 @@
+
+ 
+<div id="body" style="margin-top: 0px;">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  <div id="navbar">
+    <img src="../../assets/images/Finance-modified.png" class="navbar_img" alt="..." >
+    <ul id="links">
+      <li class="link" [routerLink]="['/aboutus']">About</li>
+      <li class="link"  [routerLink]="['/indexLink']">Home</li>
+      
+     
+     
+    </ul>
+    <br style="clear: both" />
+  </div>
+
+<section >
+  <form class="container">
+<h2 >AdminLogin</h2>
+<div >
+  <div>
+<label for="username"><b>Admin Name</b></label> 
+            <input  type="text" name="username" [(ngModel)]="name" placeholder="Enter AdminName" required ><br>       
+          </div> 
+        <div>
+            <label for="userpass"><b>Password</b></label>   
+            <input  type="password" name="userpass" [(ngModel)]="password" placeholder="Enter Password" required> <br>     
+          </div>
+       
+            <div style="display: flex; margin-top:20px;">
+            <button type="submit" value="Login" (click)="checkAdmin()"> LOGIN</button>
+            </div>
+</div>
+            <div class="alert-danger">
+              <span><b>{{message}}</b> </span>
+            </div>
+          </form>
+          </section>
+

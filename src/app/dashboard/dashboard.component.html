@@ -1,0 +1,136 @@
+<section id="body">
+   <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+  
+   <div>
+     
+     <div id="navbar">
+      
+      <img src="../../assets/images/Finance-modified.png" class="navbar_img" alt="..." >
+       <ul id="links">
+       
+     
+         
+         <li class="link" style="border: none;background-color:  rgb(152, 171, 58);font-size: 17px; font-weight: bold;font-family: 'Dosis', sans-serif;;" >Welcome! {{usname}}</li>
+         <li class="link" [routerLink]="['/aboutus']">About</li>
+         <li class="link"  [routerLink]="['/indexLink']">Home</li>
+         <li class="link"  [routerLink]="['/products']">Show Products</li>
+         <li class="link"  [routerLink]="['/indexLink']">Logout</li>
+         
+         
+       </ul>
+       <br style="clear: both" />
+     </div>
+<div class="container">
+   <!-- <button type="submit" [disabled]="isdisabled" [routerLink]="['/products']" >Show Products</button> -->
+    <div class="heading">
+      
+       <h2>DASHBOARD</h2>
+    </div>
+    <!-- <div class="card-details">
+      
+       <label for="cardno">Card Number:</label>
+       <input type="text" id="cardno" name="cardno" [(ngModel)]="uscard" readonly />
+       <br>  <br>
+        <label for="name">Name:</label>
+       <input type="text" id="name"  name="name" [(ngModel)]="usname" readonly/>
+       <br>  <br>
+       <label for="validity">Valid till:</label>
+      
+       <input type="text" id="validity" [value]= "usvalidity |date:'mediumDate'" name="validity" readonly/>
+       <br>  <br>
+       <label for="ctype">Card Type:</label>
+       <input type="text" id="ctype" name="ctype" [(ngModel)]="ustype"  readonly/>
+    </div> -->
+
+    
+    <div class="card product" style="width: 30rem; " >
+      
+      <div class="card-body">
+         <label for="cardno">Card Number:</label>
+         <input type="text" id="cardno" name="cardno" [(ngModel)]="uscard" readonly />
+         <br>  <br>
+          <label for="name">Name:</label>
+         <input type="text" id="name"  name="name" [(ngModel)]="usname" readonly/>
+         <br>  <br>
+         <label for="validity">Valid till:</label>
+        
+         <input type="text" id="validity" [value]= "usvalidity |date:'mediumDate'" name="validity" readonly/>
+         <br>  <br>
+         <label for="ctype">Card Type:</label>
+         <input type="text" id="ctype" name="ctype" [(ngModel)]="ustype"  readonly/>
+
+         
+        
+      </div>
+
+      </div>
+
+
+
+
+    <div [class]="diact" id="stat" >
+
+          <span class="stat" >{{stat}}</span>
+        </div>
+    <br><br>
+    <h2></h2>
+
+    <div class="card-info">
+       TOTAL CREDIT : {{ total_credit |currency:'INR' }}<br><br>
+       CREDIT USED : {{ credit_used |currency:'INR' }}<br><br>
+       REMAINING CREDIT : {{ remaining_credit |currency:'INR' }}<br><br>
+    </div>
+    <div class="prod-head">
+       <h3>PRODUCT PURCHASED</h3>
+    </div>
+    <!-- <div class="prod-det">
+       <label for="prodname"> PRODUCT NAME:</label>
+      <input type="text" id="prodname" [value]="product_name" readonly/>
+      <br><br>
+      <label for="amount">AMOUNT:</label>
+       <input type="text" id="amount" [value]="amount" readonly/>
+       <br><br>
+       <label for="paid">PAID:</label>
+       <input type="text" id="paid" [value]="paid" readonly />
+       <br><br>
+       <label for="balance">BALANCE:</label>
+       <input type="text" id="balance" [value]="balance" readonly />
+    </div> -->
+    <br>
+       <div id="transhead">
+       <p>RECENT TRANSACTIONS</p>
+       </div>
+      <div class="trans-table-container">
+      <div class="trans-table" >
+       <table border="2px">
+           <thead>
+               <tr style="background-color: rgb(28, 77, 77);color:white;">
+                   <!-- <td>PRODUCT ID</td> -->
+                   <td>PRODUCT NAME</td>
+                   <td>COST</td>
+                   <td>EMI PAID(months)</td>
+                   <td>AMOUNT DUE </td>
+                   <td>EMI SELECTED</td>
+               </tr>
+           </thead>
+           <tbody>
+               <tr *ngFor="let his of prodhis">
+                  <!-- <td>{{his.prodid}}</td> -->
+                  <td>{{his.prodname}}</td>
+                  <td>{{his.price}}</td>
+                  <td>{{his.amountpaid}}</td>
+                  <td>{{his.ammount_bal}}</td>
+                  <td>{{his.emi}}</td>
+               </tr>
+           </tbody>
+       </table>
+    </div>
+    </div>
+    </div>
+     
+     
+     
+     
+     
+    
+    
